@@ -1,0 +1,41 @@
+{
+  "name": "highcode",
+  "version": "0.0.0",
+  "author": "Timur Shemsedinov <timur.shemsedinov@gmail.com>",
+  "license": "MIT",
+  "description": "highcode",
+  "main": "highcode.js",
+  "files": ["highcode.d.ts"],
+  "engines": {
+    "node": "16 || 18 || 19 || 20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metarhia/highcode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/metarhia/highcode/issues",
+    "email": "timur.shemsedinov@gmail.com"
+  },
+  "homepage": "https://metarhia.com",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/tshemsedinov"
+  },
+  "scripts": {
+    "test": "npm run lint && metatests test/",
+    "lint": "eslint . && prettier --check \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/.*rc\""
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "eslint": "^8.19.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "metatests": "^0.8.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
